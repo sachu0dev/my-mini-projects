@@ -172,6 +172,7 @@ main{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
+  margin-top: 2rem;
 }
 /* cards */
 .card {
