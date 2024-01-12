@@ -47,13 +47,22 @@ const projects = [
     liveLink: "../06-modal/index.html",
     demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/06-modal",
     img: "img6"
+  },
+  {
+    name: "Question",
+    info: "Experience dynamic design with our Color Change Mini Project. Click the button, and watch as the website's background transforms into a burst of vibrant, random colors, creating a visually engaging and interactive experience.",
+    liveLink: "../07-questions/index.html",
+    demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/07-questions",
+    img: "img7"
   }
 ];
 
 
 const projectCard = document.querySelector('.projects');
+const subHead = document.getElementById('sub-head');
 
 function renderProjects(projects){
+  subHead.textContent = `Explore an array of ${Math.round(projects.length/10)}0+ beginner-friendly mini projects on this website, designed to enhance your coding skills and ignite your passion for programming. Dive into a diverse range of hands-on experiences, making learning both enjoyable and accessible for beginners.`;
   for(let i = 0; i < projects.length; i++){
     projectCard.innerHTML += `
 <div class="card">
@@ -68,12 +77,12 @@ function renderProjects(projects){
      ${projects[i].info}
      </p>
      <div class="button-container">
-      <a class="action" href="${projects[i].liveLink}">
+      <a class="action" target="_blank" href="${projects[i].liveLink}">
         <button class="live-button">
          Live Demo
        </button>
       </a>
-      <a class="action" href="${projects[i].demoLink}">
+      <a class="action" target="_blank" href="${projects[i].demoLink}">
         <button class="live-button">
           Source Code
         </button>

@@ -41,7 +41,6 @@ ul{
   justify-content: center;
   gap: 4rem;
   font-weight: 700;
-  color: var(--light-color);
   cursor: pointer;
 }
 
@@ -57,10 +56,12 @@ ul{
   color: gray;
 }
 
-ul li i{
+ul li a i{
   font-size: 1.3rem;
+  color: var(--light-color);
+
 }
-ul li:hover{
+ul li a i:hover{
   color: red;
 }
 
@@ -176,7 +177,7 @@ main{
 }
 /* cards */
 .card {
-  max-width: 30vw;
+  width: 450px;
   border-radius: 0.5rem;
   background-color: #fff;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -243,4 +244,31 @@ main{
   transform: translateY(2px) translateX(1px);
   box-shadow: 0 0 0 0 black;
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1600px){
+  .projects{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    margin-top: 2rem;
+  }
+}
 
