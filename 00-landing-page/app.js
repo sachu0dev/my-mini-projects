@@ -1,41 +1,48 @@
 const projects = [
   {
-    name: "1. Color Flipper",
+    name: "Rock Paper Scissor",
+    info: "Experience dynamic design with our Color Change Mini Project. Click the button, and watch as the website's background transforms into a burst of vibrant, random colors, creating a visually engaging and interactive experience.",
+    liveLink: "../rock-paper-scissor/index.html",
+    demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/rock-paper-scissor",
+    img: "img-1",
+  },
+  {
+    name: "Color Flipper",
     info: "Experience dynamic design with our Color Change Mini Project. Click the button, and watch as the website's background transforms into a burst of vibrant, random colors, creating a visually engaging and interactive experience.",
     liveLink: "../01-color-flipper/index.html",
     demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/01-color-flipper",
     img: "img1",
   },
   {
-    name: "2. Counter",
+    name: "Counter",
     info: "Experience dynamic design with our Color Change Mini Project. Click the button, and watch as the website's background transforms into a burst of vibrant, random colors, creating a visually engaging and interactive experience.",
     liveLink: "../02-counter/index.html",
     demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/02-counter",
     img: "img2"
   },
   {
-    name: "3. Reviews",
+    name: "Reviews",
     info: "Experience dynamic design with our Color Change Mini Project. Click the button, and watch as the website's background transforms into a burst of vibrant, random colors, creating a visually engaging and interactive experience.",
     liveLink: "../03-reviews/index.html",
     demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/03-reviews",
     img: "img3"
   },
   {
-    name: "4. Navbar",
+    name: "Navbar",
     info: "Experience dynamic design with our Color Change Mini Project. Click the button, and watch as the website's background transforms into a burst of vibrant, random colors, creating a visually engaging and interactive experience.",
     liveLink: "../04-navbar/index.html",
     demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/04-navbar",
     img: "img4"
   },
   {
-    name: "5. Sidebar",
+    name: "Sidebar",
     info: "Experience dynamic design with our Color Change Mini Project. Click the button, and watch as the website's background transforms into a burst of vibrant, random colors, creating a visually engaging and interactive experience.",
     liveLink: "../05-sidebar/index.html",
     demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/05-sidebar",
     img: "img5"
   },
   {
-    name: "6. Modal",
+    name: "Modal",
     info: "Experience dynamic design with our Color Change Mini Project. Click the button, and watch as the website's background transforms into a burst of vibrant, random colors, creating a visually engaging and interactive experience.",
     liveLink: "../06-modal/index.html",
     demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/06-modal",
@@ -54,7 +61,7 @@ function renderProjects(projects){
    <div class="content">
      <a href="#">
        <span class="title">
-         ${projects[i].name}
+         ${i + 1}. ${projects[i].name}
        </span>
      </a>
      <p class="desc">
