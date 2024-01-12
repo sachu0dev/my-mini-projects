@@ -78,12 +78,12 @@ function renderProjects(projects){
      </p>
      <div class="button-container">
       <a class="action" target="_blank" href="${projects[i].liveLink}">
-        <button class="live-button">
+        <button class="live-button" id="btn">
          Live Demo
        </button>
       </a>
       <a class="action" target="_blank" href="${projects[i].demoLink}">
-        <button class="live-button">
+        <button class="live-button" id="btn">
           Source Code
         </button>
      </a>
