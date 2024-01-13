@@ -302,8 +302,8 @@ main{
 footer{
   display: grid;
   grid-template-rows: 1fr 3rem;
-  height: 30vh;
-  margin-top: 4rem;
+  height: 25vh;
+  margin-top: 10vh;
 }
 
 .top-footer{
@@ -311,7 +311,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 5vw;
 }
 
 .footer-icons a{
@@ -341,8 +341,6 @@ footer{
   color: var(--light-color);
   font-weight: 800;
 }
-
-
 
 .bottom-footer{
   background-color: black;
@@ -416,6 +414,17 @@ footer{
   }
   .card {
     width: 350px;
+  }
+  .footer-icons a i{
+    font-size: 1.6rem;
+  }
+  
+  .footer-icons a i:hover{
+    font-size: 1.4rem;
+  }
+  
+  .footer-icons a p{
+    font-size: 0.8rem;
   }
 }
 
