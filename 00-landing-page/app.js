@@ -54,7 +54,14 @@ const projects = [
     liveLink: "../07-questions/index.html",
     demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/07-questions",
     img: "img7"
-  }
+  },
+  {
+    name: "Filter Menu",
+    info: "Experience dynamic design with our Color Change Mini Project. Click the button, and watch as the website's background transforms into a burst of vibrant, random colors, creating a visually engaging and interactive experience.",
+    liveLink: "../08-menu/index.html",
+    demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/08-menu",
+    img: "img8"
+  },
 ];
 
 
