@@ -93,6 +93,16 @@ function renderProjects(projects){
 `
   }
 }
-
 renderProjects(projects);
+
+const toggleBtn =document.querySelector('.play-links');
+const sidebar =document.querySelector('.slider-links');
+
+toggleBtn.addEventListener('click', ()=>{
+  sidebar.classList.toggle('show-sidebar');
+});
+
+closeBtn.addEventListener('click', ()=>{
+  sidebar.classList.remove('show-sidebar');
+})
 
