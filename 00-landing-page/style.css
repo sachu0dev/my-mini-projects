@@ -313,7 +313,7 @@ main{
   .card {
     width: 450px;
   }
-  ul{
+  .nav-header{
     display: none;
   }
   .heading-top{
