@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="output" id="output"></div>
+      <div>
+        <button class="number"
+        onclick="calculation += '1'; display()">1</button>
+        <button class="number"
+        onclick="calculation += '2'; display()">2</button>
+        <button class="number"
+        onclick="calculation += '3'; display()">3</button>
+        <button class="opration"
+        onclick="calculation += '+'; display()">+</button>
+      </div>
+      <div>
+        <button class="number"
+        onclick="calculation += '4'; display()">4</button>
+        <button class="number"
+        onclick="calculation += '5'; display()">5</button>
+        <button class="number"
+        onclick="calculation += '6'; display()">6</button>
+        <button class="opration"
+        onclick="calculation += '-'; display()">-</button>
+      </div>
+      <div>
+        <button class="number"
+        onclick="calculation += '7'; display()">7</button>
+        <button class="number"
+        onclick="calculation += '8'; display()">8</button>
+        <button class="number"
+        onclick="calculation += '9'; display()">9</button>
+        <button class="opration"
+        onclick="calculation += '*'; display()">&times;</button>
+      </div>
+      <div>
+        <button class="jerro"
+        onclick="calculation += '0'; display()">0</button>
+        <button class="number"
+        onclick="calculation += '.'; display()">.</button>
+        <button class="opration"
+        onclick="calculation += '/'; display()"> &#xF7;</button>
+      </div>
+      <div>
+        <button class="eval-clear" onclick="calculation = ''; display()">Clear</button>
+        <button class="eval-clear" onclick="calculation = eval(calculation); display()">=</button>
+      </div>
+    </div>
+
+    <script>
+      let calculation = '';
+      function display(){
+        return(document.getElementById("output").innerHTML= calculation);
+      }
+    </script>
+  </body>
+</html>

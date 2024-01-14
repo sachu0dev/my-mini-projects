@@ -1,0 +1,112 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(34, 34, 34);
+  height: 100vh;
+}
+.output{
+  color: white;
+  font-size: 36px;
+  height: 100px;
+  width: 320px;
+  background-color: rgb(63, 63, 63);
+  border-color: gray;
+  border-style: solid;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px 5px #000;
+}
+.calculator{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: black;
+  border-color: gray;
+  border-style: solid;
+  margin-top: 10px;
+  
+}
+.calculator div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.number,
+.opration{
+  font-size: 36px;
+  background-color: black;
+  color: yellow;
+  width: 80px;
+  height: 80px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: gray;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.number:hover,
+.opration:hover{
+  background-color: rgb(15, 15, 15);
+}
+.number:active,
+.opration:active{
+  background-color: rgb(130, 130, 130);
+}
+.opration{
+  color: red;
+}
+.jerro{
+  font-size: 36px;
+  background-color: black;
+  color: yellow;
+  width: 180px;
+  height: 80px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.jerro:hover{
+  background-color: rgb(15, 15, 15);
+}
+.jerro:active{
+  background-color: rgb(130, 130, 130);
+}
+.eval-clear{
+  font-size: 36px;
+  background-color: black;
+  color: lightgray;
+  width: 175px;
+  height: 80px;
+  border-color: gray;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-style: solid;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.eval-clear:hover{
+  background-color: rgb(15, 15, 15);
+}
+.eval-clear:active{
+  background-color: rgb(130, 130, 130);
+}
