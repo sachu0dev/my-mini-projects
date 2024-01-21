@@ -90,6 +90,13 @@ const projects = [
     demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/11-tabs",
     img: "img11"
   },
+  {
+    name: "countdown",
+    info: "Experience dynamic design with our Color Change Mini Project. Click the button, and watch as the website's background transforms into a burst of vibrant, random colors, creating a visually engaging and interactive experience.",
+    liveLink: "../12-countdown-timer/index.html",
+    demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/12-countdown-timer",
+    img: "img12"
+  },
 ];
 
 
