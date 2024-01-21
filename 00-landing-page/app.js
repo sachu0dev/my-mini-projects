@@ -104,6 +104,13 @@ const projects = [
     demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/birthday-countdown",
     img: "img-3"
   },
+  {
+    name: "lorem ipsum generator",
+    info: "Experience dynamic design with our Color Change Mini Project. Click the button, and watch as the website's background transforms into a burst of vibrant, random colors, creating a visually engaging and interactive experience.",
+    liveLink: "../13-lorem-ipsum/index.html",
+    demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/13-lorem-ipsum",
+    img: "img13"
+  },
 ];
 
 
