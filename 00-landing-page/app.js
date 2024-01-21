@@ -118,7 +118,7 @@ const projectCard = document.querySelector('.projects');
 const subHead = document.getElementById('sub-head');
 
 function renderProjects(projects){
-  subHead.textContent = `Explore an array of ${Math.round(projects.length/10)}0+ beginner-friendly mini projects on this website, designed to enhance your coding skills and ignite your passion for programming. Dive into a diverse range of hands-on experiences, making learning both enjoyable and accessible for beginners.`;
+  subHead.textContent = `Explore an array of ${Math.floor(projects.length/10)}0+ beginner-friendly mini projects on this website, designed to enhance your coding skills and ignite your passion for programming. Dive into a diverse range of hands-on experiences, making learning both enjoyable and accessible for beginners.`;
   for(let i = 0; i < projects.length; i++){
     projectCard.innerHTML += `
 <div class="card">
