@@ -7,6 +7,13 @@ const projects = [
     img: "img-2",
   },
   {
+    name: "calculator",
+    info: "Experience dynamic design with our Color Change Mini Project. Click the button, and watch as the website's background transforms into a burst of vibrant, random colors, creating a visually engaging and interactive experience.",
+    liveLink: "../14-grocery-bud/index.html",
+    demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/14-grocery-bud",
+    img: "img14",
+  },
+  {
     name: "Rock Paper Scissor",
     info: "Experience dynamic design with our Color Change Mini Project. Click the button, and watch as the website's background transforms into a burst of vibrant, random colors, creating a visually engaging and interactive experience.",
     liveLink: "../rock-paper-scissor/index.html",
