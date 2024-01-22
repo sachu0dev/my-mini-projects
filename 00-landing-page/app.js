@@ -136,9 +136,11 @@ function renderProjects(projects){
          ${i + 1}. ${projects[i].name}
        </span>
      </a>
+     <div class="description">
      <p class="desc">
      ${projects[i].info}
      </p>
+     </div>
      <div class="button-container">
       <a class="action" target="_blank" href="${projects[i].liveLink}">
         <button class="live-button" id="btn">
