@@ -123,7 +123,7 @@ const projects = [
     info: "Elevate your website's visual appeal with a Slideshow project using HTML, CSS, and JavaScript. Create a dynamic and captivating slideshow to showcase images or content seamlessly. Dive into the fundamentals of creating an engaging presentation and enhance your web development skills. Start coding now for a sleek and user-friendly slideshow that captivates your audience!",
     liveLink: "../15-slider/index.html",
     demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/15-slider",
-    img: "img13"
+    img: "img15"
   },
 ];
 
