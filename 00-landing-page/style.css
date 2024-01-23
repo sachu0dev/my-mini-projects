@@ -120,18 +120,21 @@ ul li a i:hover{
   content: 'T';
 }
 .box:nth-child(6)::before {
+  transform: translateY(-100%);
   content: '-';
 }
 .box:nth-child(7)::before {
   content: 'E';
 }
 .box:nth-child(8)::before {
+  transform: translateY(-100%);
   content: 'N';
 }
 .box:nth-child(9)::before {
   content: 'D';
 }
 .box:nth-child(10)::before {
+  transform: translateY(-100%);
   content: '%';
 }
 
