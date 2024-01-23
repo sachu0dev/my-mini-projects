@@ -41,7 +41,6 @@ function carrousle(){
   })
 }
 
-prevBtn.style.display = 'none';
 
 window.addEventListener('load', () => {
   setInterval(()=>{
