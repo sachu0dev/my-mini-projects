@@ -104,35 +104,35 @@ ul li a i:hover{
 
 .box:nth-child(2)::before {
   transform: translateY(-100%);
-  content: 'U';
+  content: 'R';
 }
 
 .box:nth-child(3)::before {
-  content: 'L';
+  content: 'O';
 }
 
 .box:nth-child(4)::before {
   transform: translateY(-100%);
-  content: 'L';
+  content: 'N';
 }
 
 .box:nth-child(5)::before {
-  content: '-';
-}
-.box:nth-child(6)::before {
-  content: 'S';
-}
-.box:nth-child(7)::before {
   content: 'T';
 }
+.box:nth-child(6)::before {
+  content: '-';
+}
+.box:nth-child(7)::before {
+  content: 'E';
+}
 .box:nth-child(8)::before {
-  content: 'A';
+  content: 'N';
 }
 .box:nth-child(9)::before {
-  content: 'C';
+  content: 'D';
 }
 .box:nth-child(10)::before {
-  content: 'K';
+  content: '%';
 }
 
 .button:hover .box:before {
