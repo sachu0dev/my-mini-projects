@@ -39,10 +39,10 @@ body{
 .night-cloud{
   background: linear-gradient(135deg, #39304a, #212130);
 }
-.day-driel{
+.day-drizzel{
   background: linear-gradient(135deg, #264653, #2a9d8f);
 }
-.night-drijel{
+.night-drizzel{
   background: linear-gradient(135deg, #182c34, #0a2724);
 }
 .day-mist{

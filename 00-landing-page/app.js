@@ -14,6 +14,13 @@ const projects = [
     img: "img14",
   },
   {
+    name: "Simple weather app",
+    info: "Immerse yourself in web development by creating a Weather App using a single weather API. Utilize HTML, CSS, and JavaScript to design an intuitive interface that fetches and displays real-time weather data. Dive into the essentials of API integration and enhance your skills in creating functional and user-friendly applications. Start coding now to build a Weather App that keeps users informed about current weather conditions effortlessly!",
+    liveLink: "../weather-app/index.html",
+    demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/weather-app",
+    img: "img-4",
+  },
+  {
     name: "Rock, Paper, Scissors with Scoreboard",
     info: "Experience the classic game with a modern twist. Crafted using HTML, CSS, and JavaScript, this project features a persistent scoreboard using local storage. Challenge yourself or enable auto-play for a dynamic experience. Sharpen your coding skills while enjoying the timeless fun of Rock, Paper, Scissors. Dive in and play today!",
     liveLink: "../rock-paper-scissor/index.html",
