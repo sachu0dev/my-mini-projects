@@ -114,4 +114,14 @@ function removetheme(){
   card.classList.remove('day');
   card.classList.remove('evening');
   card.classList.remove('night');
+  card.classList.remove('day-rain');
+  card.classList.remove('night-rain');
+  card.classList.remove('day-drizzle');
+  card.classList.remove('night-drizzle');
+  card.classList.remove('day-mist');
+  card.classList.remove('night-mist');
+  card.classList.remove('day-snow');
+  card.classList.remove('night-snow');
+  card.classList.remove('day-cloud');
+  card.classList.remove('night-cloud');
 }
