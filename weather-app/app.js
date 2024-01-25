@@ -12,6 +12,7 @@ let lastsearch = localStorage.getItem("lastsearch");
 async function checkWeather(cityname) {
     const response = await fetch(apiUrl +`&appid=${apiKey}&q=${cityname}`);
     const data = await response.json();
+    console.log(data);
     if (response.status === 404) {
       input.placeholder = 'invalid city name'
     } else {
@@ -92,7 +93,7 @@ function setTheme(weather){
     } else {
       card.classList.add('night-drizzle');
     }
-  }  else if (weather === 'Mist'){
+  }  else if (weather === 'Mist' || weather === 'Fog'){
     weathericon.src = 'images/mist.png';
     if (hours >= 4 && hours < 20){
       card.classList.add('day-mist');
@@ -114,14 +115,12 @@ function removetheme(){
   card.classList.remove('day');
   card.classList.remove('evening');
   card.classList.remove('night');
-  card.classList.remove('day-rain');
-  card.classList.remove('night-rain');
+  card.classList.remove('day-cloud');
+  card.classList.remove('night-cloud');
   card.classList.remove('day-drizzle');
   card.classList.remove('night-drizzle');
   card.classList.remove('day-mist');
   card.classList.remove('night-mist');
   card.classList.remove('day-snow');
   card.classList.remove('night-snow');
-  card.classList.remove('day-cloud');
-  card.classList.remove('night-cloud');
 }

@@ -70,7 +70,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 .search input{
   border: none;
@@ -135,4 +134,18 @@ body{
 .wind{
   font-size: 1.7rem;
   margin-top: -6px;
+}
+
+@media (max-width: 768px){
+  body{
+    background-color: #f0f0f0;
+  }
+  .card{
+    max-width: 90%;
+    margin: 4rem 2rem;
+  }
+  .search input{
+    width: 80%;
+  }
+
 }
