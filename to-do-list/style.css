@@ -123,7 +123,7 @@ body {
 }
 .alert-success{
   display: block;
-  background: rgba(5, 161, 5, 0.725);
+  background: #05a105c9;
 }
 /* input section */
 .input-box{

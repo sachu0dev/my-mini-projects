@@ -17,6 +17,10 @@ let editID = '';
 
 // ****** EVENT LISTENERS **********
 inputBox.addEventListener('submit', addItem);
+// clear items
+clearBtn.addEventListener('click', clearItems);
+// load items from local storage
+window.addEventListener('DOMContentLoaded', setupItems);
 
 
 
@@ -24,7 +28,6 @@ inputBox.addEventListener('submit', addItem);
 function addItem(e){
   e.preventDefault();
   const value = inputText.value;
-  console.log(value);
   const id = new Date().getTime().toString();
   if(value && !editFlag){
     createListItems(id,value);
@@ -58,7 +61,8 @@ function displayAlert(text, action){
   setTimeout(()=>{
     alert.textContent = '';
     alertBox.classList.remove(`alert-${action}`);
-  },1000);
+  }
+  ,1000);
 }
 
 // clear items
@@ -109,7 +113,6 @@ function setBackToDefault(){
   submitBtn.innerHTML = 'submit';
   
 }
-
 // ****** LOCAL STORAGE **********
 function addToLocalStorage(id,value){
   const grocery = {id,value};
@@ -119,6 +122,7 @@ function addToLocalStorage(id,value){
 }
 function removeFromLocalStorage(id){
   let items = getLocalStorage();
+  console.log(getLocalStorage());
   items = items.filter((item)=>{
     if(item.id!== id){
       return item;
@@ -139,9 +143,7 @@ function editLocalStorage(id, value) {
 function getLocalStorage(){
   return localStorage.getItem('list')?JSON.parse(localStorage.getItem('list')):[];
 }
-
 // ****** SETUP ITEMS **********
-
 function setupItems(){
   let items = getLocalStorage();
   if(items.length > 0){

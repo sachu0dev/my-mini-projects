@@ -21,6 +21,13 @@ const projects = [
     img: "img-4",
   },
   {
+    name: "Todo app",
+    info: "Craft a dynamic To-Do App using HTML, CSS, and JavaScript, empowering users to effortlessly add, delete, and edit tasks. The user-friendly interface simplifies task management, providing a complete solution for organizing daily activities. Dive into front-end development essentials as you implement dynamic features like task addition, deletion, and editing. Enhance your coding skills with this responsive and user-friendly To-Do App. Start coding now for a powerful and versatile task management solution!",
+    liveLink: "../to-do-list/index.html",
+    demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/to-do-list",
+    img: "img-5",
+  },
+  {
     name: "Rock, Paper, Scissors with Scoreboard",
     info: "Experience the classic game with a modern twist. Crafted using HTML, CSS, and JavaScript, this project features a persistent scoreboard using local storage. Challenge yourself or enable auto-play for a dynamic experience. Sharpen your coding skills while enjoying the timeless fun of Rock, Paper, Scissors. Dive in and play today!",
     liveLink: "../rock-paper-scissor/index.html",
