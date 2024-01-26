@@ -10,6 +10,7 @@ const tasksContainer = document.querySelector('.task-list');
 const alert = document.querySelector('.alert');
 const clearBtn = document.querySelector('.clear-btn');
 
+
 // edit option
 let editElement ;
 let editFlag = false;
@@ -81,7 +82,6 @@ function clearItems(){
   setBackToDefault();
 }
 
-
 // delete item
 function deleteItem(e){
   const element = e.currentTarget.parentElement.parentElement;
@@ -110,7 +110,7 @@ function setBackToDefault(){
   inputText.value = '';
   editFlag = false;
   editID = '';
-  submitBtn.innerHTML = 'submit';
+  submitBtn.innerHTML = 'add';
   
 }
 // ****** LOCAL STORAGE **********
@@ -183,4 +183,5 @@ function createListItems(id, value) {
 
   // append child
   tasksContainer.appendChild(element);
+  
 }
