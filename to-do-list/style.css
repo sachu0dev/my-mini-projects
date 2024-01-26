@@ -113,9 +113,17 @@ body {
 }
 .right{
   padding: 10px;
-  background: rgba(5, 210, 5, 0.628);
   position: relative;
   color: #fff;
+  display:none;
+}
+.alert-danger{
+  display: block;
+  background: rgba(241, 10, 10, 0.727);
+}
+.alert-success{
+  display: block;
+  background: rgba(5, 161, 5, 0.725);
 }
 /* input section */
 .input-box{

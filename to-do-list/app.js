@@ -1,6 +1,7 @@
 // input selections
+const alertBox = document.querySelector('.right')
 const inputText = document.getElementById('input-text');
-const submitBtn = document.querySelector('.submit-btn');
+const submitBtn = document.getElementById('submit');
 const inputBox = document.querySelector('.input-box');
 // tasks container
 const listContainer = document.querySelector('.list-container');
@@ -49,13 +50,14 @@ function addItem(e){
 
 // display alret
 function displayAlert(text, action){
+  alert
   alert.textContent = text;
-  alert.classList.add(`alert-${action}`);
+  alertBox.classList.add(`alert-${action}`);
   
   // remove alert after 1 seconds
   setTimeout(()=>{
     alert.textContent = '';
-    alert.classList.remove(`alert-${action}`);
+    alertBox.classList.remove(`alert-${action}`);
   },1000);
 }
 
@@ -97,14 +99,15 @@ function editItem(e){
   inputText.value = editElement.textContent;
   editFlag = true;
   editID = element.dataset.id;
-  submitBtn.textContent = 'update';
+  submitBtn.innerHTML = 'update';
 }
 //  set back to default
 function setBackToDefault(){
   inputText.value = '';
   editFlag = false;
   editID = '';
-  submitBtn.textContent = 'submit';
+  submitBtn.innerHTML = 'submit';
+  
 }
 
 // ****** LOCAL STORAGE **********
