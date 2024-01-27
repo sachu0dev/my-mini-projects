@@ -12,7 +12,13 @@ const saveBtn = document.getElementById('save-btn');
 const moreBtn = document.querySelector(".advnc-opt");
 const optContainer = document.querySelector('.more-opt-section');
 const optChangeBtn = document.querySelector('.submit-opt');
-
+const alert = document.querySelector('.alert');
+// checbox
+const lenghtInput = document.querySelector('.length-input');
+const uppercaseInput = document.getElementById('uppercase');
+const lowercaseInput = document.getElementById('lowercase');
+const numbersInput = document.getElementById('number');
+const symbolsInput = document.getElementById('symbols');
 // event listeners
 copyBtn.addEventListener('click', copyPassword);
 genBtn.addEventListener('click', generatePassword);
@@ -33,21 +39,28 @@ let defaultMethod = {
 
 // function to generate password
 function generatePassword() {
- let password = "";
-
+  let password = "";
   if (isDefault) {
-    const allChars = []
-      .concat(defaultMethod.uppercase ? upchars : [])
-      .concat(defaultMethod.lowercase ? chars : [])
-      .concat(defaultMethod.numbers ? numbers : [])
-      .concat(defaultMethod.symbols ? signs : []);
-
-    for (let i = 0; i < defaultMethod.lengthOfPass; i++) {
-      password += allChars[Math.floor(Math.random() * allChars.length)];
-    }
+      let allChars = [];
+      if (defaultMethod.uppercase) {
+          allChars = allChars.concat(upchars);
+      }
+      if (defaultMethod.lowercase) {
+          allChars = allChars.concat(chars);
+      }
+      if (defaultMethod.numbers) {
+          allChars = allChars.concat(numbers);
+      }
+      if (defaultMethod.symbols) {
+          allChars = allChars.concat(signs);
+      }
+      for (let i = 0; i < defaultMethod.lengthOfPass; i++) {
+          password += allChars[Math.floor(Math.random() * allChars.length)];
+      }
   }
   output.value = password;
 }
+
 
 // function to copy password
 function copyPassword() {
@@ -68,11 +81,23 @@ function savePassword(password) {
   // add new password to existing passwords
   existingPasswords.push(idpass);
   localStorage.setItem('passwords', JSON.stringify(existingPasswords));
-  alert('Password saved!');
+  displayAlert('Password saved!');
 }
 function showOpt() {
   optContainer.classList.toggle('show-container');
 }
 function setPreference(){
-
+  if(lenghtInput.value !== '' && lenghtInput.value < 20 && lenghtInput.value > 4){
+    defaultMethod.lengthOfPass = parseInt(lenghtInput.value);
+  }
+    defaultMethod.uppercase = uppercaseInput.checked;
+    defaultMethod.lowercase = lowercaseInput.checked;
+    defaultMethod.numbers = numbersInput.checked;
+    defaultMethod.symbols = symbolsInput.checked;
+    displayAlert('Preferences updated!');
+}
+function displayAlert(message) {
+  alert.textContent = message;
+  alert.classList.add('show-alert');
+  setTimeout(() => alert.classList.remove('show-alert'), 1500);
 }

@@ -19,6 +19,10 @@
     <div class="main">
       <div class="container">
         <div class="box">
+          <div class="alert"></div>
+          <a href="password.html" target="_blank" class="show-password"
+            >Show saved Passwords <i class="fa-solid fa-arrow-right"></i
+          ></a>
           <div class="head">
             <h1>Generate a</h1>
             <h1 class="main-head">Random password</h1>
@@ -34,26 +38,40 @@
             <button class="copy-btn"><i class="fa-regular fa-copy"></i></button>
           </div>
           <div class="gen-btn-container">
-            <button class="gen-btn" id="generate"><i class="fa-solid fa-bolt"></i> Generate Password</button>
-            <button class="gen-btn" id="save-btn"><i class="fa-solid fa-floppy-disk"></i> Save This Password</button>
-        </div>
-        <div class="more-opt">
-          <span class="advnc-opt"><i class="fa-solid fa-chevron-down"></i> Advanced Options</span>
-          <div class="more-opt-section">
-            <input type="number" placeholder="Length" class="more-inputs length-input">
-            <label>
-              <input type="checkbox" id="uppercase" class="checkbox"> Uppercase
-            </label>
-            <label>
-              <input type="checkbox" id="lowercase" class="checkbox"> Lowercase
-            </label>
-            <label>
-              <input type="checkbox" id="number" class="checkbox"> Numbers
-            </label>
-            <label>
-              <input type="checkbox" id="symbols" class="checkbox"> symbols
-            </label>
-            <button class="submit-opt">submit</button>
+            <button class="gen-btn" id="generate">
+              <i class="fa-solid fa-bolt"></i> Generate Password
+            </button>
+            <button class="gen-btn" id="save-btn">
+              <i class="fa-solid fa-floppy-disk"></i> Save This Password
+            </button>
+          </div>
+          <div class="more-opt">
+            <span class="advnc-opt"
+              ><i class="fa-solid fa-chevron-down"></i> Advanced Options</span
+            >
+            <div class="more-opt-section">
+              <input
+                type="number"
+                placeholder="Length"
+                class="more-inputs length-input"
+                value="10"
+              />
+              <label>
+                <input type="checkbox" id="uppercase" class="checkbox" />
+                Uppercase
+              </label>
+              <label>
+                <input type="checkbox" id="lowercase" class="checkbox" />
+                Lowercase
+              </label>
+              <label>
+                <input type="checkbox" id="number" class="checkbox" /> Numbers
+              </label>
+              <label>
+                <input type="checkbox" id="symbols" class="checkbox" /> symbols
+              </label>
+              <button class="submit-opt">submit</button>
+            </div>
           </div>
         </div>
       </div>
