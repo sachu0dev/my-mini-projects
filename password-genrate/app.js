@@ -11,12 +11,14 @@ const genBtn = document.getElementById('generate');
 const saveBtn = document.getElementById('save-btn');
 const moreBtn = document.querySelector(".advnc-opt");
 const optContainer = document.querySelector('.more-opt-section');
+const optChangeBtn = document.querySelector('.submit-opt');
 
 // event listeners
 copyBtn.addEventListener('click', copyPassword);
 genBtn.addEventListener('click', generatePassword);
 saveBtn.addEventListener('click', () => savePassword(output.value));
 moreBtn.addEventListener('click', showOpt);
+optChangeBtn.addEventListener('click', setPreference);
 
 
 // default methods
@@ -70,4 +72,7 @@ function savePassword(password) {
 }
 function showOpt() {
   optContainer.classList.toggle('show-container');
+}
+function setPreference(){
+
 }

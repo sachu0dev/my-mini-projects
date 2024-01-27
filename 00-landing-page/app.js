@@ -1,5 +1,12 @@
 const projects = [
   {
+    name: "Random Password Generator",
+    info: "Kickstart your coding journey with this DIY Black-Themed Calculator project. Using HTML, CSS, and JavaScript, create a sleek and stylish calculator from scratch. Dive into the world of web development and experience the elegance of simplicity in design and functionality. Add, subtract, multiply, and divide with flair while reducing eye strain with the chic black theme. Ready to code in style? Start building your Black-Themed Calculator now!",
+    liveLink: "../password-genrate/index.html",
+    demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/password-genrate",
+    img: "img-6",
+  },
+  {
     name: " DIY Black-Themed Simple Calculator",
     info: "Kickstart your coding journey with this DIY Black-Themed Calculator project. Using HTML, CSS, and JavaScript, create a sleek and stylish calculator from scratch. Dive into the world of web development and experience the elegance of simplicity in design and functionality. Add, subtract, multiply, and divide with flair while reducing eye strain with the chic black theme. Ready to code in style? Start building your Black-Themed Calculator now!",
     liveLink: "../calculator/index.html",
