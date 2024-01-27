@@ -16,7 +16,39 @@
     <title>password genrater</title>
   </head>
   <body>
-    <div class="main"></div>
+    <div class="main">
+      <div class="container">
+        <div class="box">
+          <div class="head">
+            <h1>Generate a</h1>
+            <h1 class="main-head">Random password</h1>
+          </div>
+          <div class="form">
+            <input
+              type="text"
+              name="genrated-pass"
+              id="password"
+              placeholder="Password"
+              class="password"
+            />
+            <button class="copy-btn"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <div class="gen-btn-container">
+            <button class="gen-btn" id="generate"><i class="fa-solid fa-bolt"></i> Generate Password</button>
+            <button class="gen-btn" id="save-btn"><i class="fa-solid fa-floppy-disk"></i> Save This Password</button>
+        </div>
+        <div class="more-opt">
+          <span><i class="fa-solid fa-chevron-down"></i> Advanced Options</span>
+          <div class="more-opt-section">
+            <input type="text" placeholder="Length" class="more-inputs length-input">
+            <div class="upercase more-inputs"><input type="checkbox"> Uppercase</div>
+            <div class="lowercase more-inputs"><input type="checkbox"> Lowercase</div>
+            <div class="numbers more-inputs"><input type="checkbox"> Numbers</div>
+            <div class="symbols more-inputs"><input type="checkbox"> Symbols</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- scripts -->
     <script src="app.js"></script>
   </body>
