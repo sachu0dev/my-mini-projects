@@ -9,11 +9,15 @@ const output = document.getElementById('password');
 const copyBtn = document.querySelector('.copy-btn');
 const genBtn = document.getElementById('generate');
 const saveBtn = document.getElementById('save-btn');
+const moreBtn = document.querySelector(".advnc-opt");
+const optContainer = document.querySelector('.more-opt-section');
 
 // event listeners
 copyBtn.addEventListener('click', copyPassword);
 genBtn.addEventListener('click', generatePassword);
-saveBtn.addEventListener('click', savePassword(password));
+saveBtn.addEventListener('click', () => savePassword(output.value));
+moreBtn.addEventListener('click', showOpt);
+
 
 // default methods
 let isDefault = true;
@@ -27,7 +31,7 @@ let defaultMethod = {
 
 // function to generate password
 function generatePassword() {
-  let password = "";
+ let password = "";
 
   if (isDefault) {
     const allChars = []
@@ -41,7 +45,6 @@ function generatePassword() {
     }
   }
   output.value = password;
-  saveBtn.addEventListener('click', savePassword(password));
 }
 
 // function to copy password
@@ -53,12 +56,18 @@ function copyPassword() {
 function convertToUppercase(charArray) {
   return charArray.map(char => char.toUpperCase());
 }
-function savePassword(newPassword) {
+function savePassword(password) {
+  // get existing passwords
   const existingPasswords = JSON.parse(localStorage.getItem('passwords')) || [];
-
-  existingPasswords.push(newPassword);
-
+  let idpass = {
+    name: prompt('Enter a name for your password'),
+    password: password
+  }
+  // add new password to existing passwords
+  existingPasswords.push(idpass);
   localStorage.setItem('passwords', JSON.stringify(existingPasswords));
-
-  console.log('Password saved successfully!');
+  alert('Password saved!');
+}
+function showOpt() {
+  optContainer.classList.toggle('show-container');
 }
