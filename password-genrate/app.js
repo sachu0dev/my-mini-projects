@@ -19,12 +19,18 @@ const uppercaseInput = document.getElementById('uppercase');
 const lowercaseInput = document.getElementById('lowercase');
 const numbersInput = document.getElementById('number');
 const symbolsInput = document.getElementById('symbols');
+const showMyPass = document.querySelector(".show-password");
 // event listeners
 copyBtn.addEventListener('click', copyPassword);
 genBtn.addEventListener('click', generatePassword);
 saveBtn.addEventListener('click', () => savePassword(output.value));
 moreBtn.addEventListener('click', showOpt);
 optChangeBtn.addEventListener('click', setPreference);
+window.addEventListener('DOMContentLoaded', ()=>{
+  if(JSON.parse(localStorage.getItem('passwords')) !== null){
+    showMyPass.classList.add('show-alert');
+  }
+});
 
 
 // default methods
@@ -81,6 +87,9 @@ function savePassword(password) {
   // add new password to existing passwords
   existingPasswords.push(idpass);
   localStorage.setItem('passwords', JSON.stringify(existingPasswords));
+  if(JSON.parse(localStorage.getItem('passwords')) !== null){
+    showMyPass.classList.add('show-alert');
+  }
   displayAlert('Password saved!');
 }
 function showOpt() {
