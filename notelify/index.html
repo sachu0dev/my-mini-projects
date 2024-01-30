@@ -16,7 +16,7 @@
     <title>notelify</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="container">
       <div class="sidebar">
         <!-- header -->
         <div class="col-head">
@@ -40,34 +40,42 @@
           </div>
         </div>
         <!-- notes list -->
-        <div class="notes-preview">
-          <div class="note-container pink">UI concepts warth existing</div>
-          <div class="note-container blue">
-            UI concepts warth existing Of everyday thing by Don
-          </div>
-        </div>
+        <div class="notes-preview"></div>
       </div>
       <!-- main -->
       <div class="main">
+        <input class="notes-title" type="text" placeholder="Enter a Title..." />
+        <textarea
+          class="notes-body"
+          spellcheck="false"
+          placeholder="Start Writing..."
+        ></textarea>
+        <button class="save-btn">Save</button>
+        <!-- welcome temp -->
         <div class="welcome-container">
-          <h1>Welcome to notelify</h1>
+          <h1>Welcome to Notelify</h1>
           <p>
-            Notelify is a simple and easy to use application that helps you
-            keep track of your notes.
+            Notelify is a simple and easy to use application that helps you keep
+            track of your notes.
           </p>
           <div class="mention">
             <h3>Made by</h3>
             <p>
-              Sushil <i class="fa-brands fa-github"></i> <i class="fa-brands fa-square-x-twitter"></i> <i class="fa-solid fa-envelope"></i>
+              Sushil <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-square-x-twitter"></i>
+              <i class="fa-solid fa-envelope"></i>
             </p>
+          </div>
         </div>
+        <!-- add note -->
+        <div class="creat-note">
+          <img src="img/note-pad.png" alt="" /> Creat your first note!
+        </div>
+        <div class="click-arrow"><img src="img/click-arrow.png" alt="" /></div>
+        <div class="add-note-btn"><i class="fa-solid fa-plus"></i></div>
       </div>
-      <!-- add note -->
-      <div class="creat-note"><img src="img/note-pad.png" alt=""> Creat your first note!</div>
-      <div class="click-arrow"><img src="img/click-arrow.png" alt=""></div>
-      <div class="add-note-btn"><i class="fa-solid fa-plus"></i></div>
     </div>
     <!-- scripts -->
-    <script src="app.js"></script>
+    <script src="js/app.js" type="module"></script>
   </body>
 </html>
