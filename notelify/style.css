@@ -217,13 +217,13 @@ html,body{
   align-items: center;
   justify-content: center;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   width: 6rem;
-  padding: .8rem 1rem ;
+  padding: .8rem .8rem ;
   border-radius: 1rem;
   margin-left: 1rem;
-  margin-top: 1rem;
+  margin-top: .5rem;
   cursor: pointer;
 }
 .save-btn:hover{
@@ -240,6 +240,10 @@ html,body{
   padding: 3rem 5rem;
   border-radius: 2rem;
   display: none;
+  margin: 30vh auto;
+  display: flex;
+  flex-direction: column;
+
 }
 .mention{
   width: 100%;
@@ -295,6 +299,11 @@ html,body{
   object-fit: contain;
 
 }
+.input-container{
+  display: none;
+  flex-direction: column;
+  height: 80vh;
+}
   .show-welcome{
-    display: block;
+    display: flex;
   }

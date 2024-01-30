@@ -44,18 +44,24 @@
       </div>
       <!-- main -->
       <div class="main">
-        <input class="notes-title" type="text" placeholder="Enter a Title..." />
-        <textarea
-          class="notes-body"
-          spellcheck="false"
-          placeholder="Start Writing..."
-        ></textarea>
-        <div class="main-btn">
-          <button class="save-btn">Save</button>
-          <button class="delete-btn">Delete</button>
+        <div class="input-container">
+          <input
+            class="notes-title"
+            type="text"
+            placeholder="Enter a Title..."
+          />
+          <textarea
+            class="notes-body"
+            spellcheck="false"
+            placeholder="Start Writing..."
+          ></textarea>
+          <div class="main-btn">
+            <button class="save-btn">Save</button>
+            <button class="delete-btn">Delete</button>
+          </div>
         </div>
         <!-- welcome temp -->
-        <div class="welcome-container">
+        <div class="welcome-container show-welcome">
           <h1>Welcome to Notelify</h1>
           <p>
             Notelify is a simple and easy to use application that helps you keep
@@ -71,10 +77,12 @@
           </div>
         </div>
         <!-- add note -->
-        <div class="creat-note">
+        <div class="creat-note show-welcome">
           <img src="img/note-pad.png" alt="" /> Creat your first note!
         </div>
-        <div class="click-arrow"><img src="img/click-arrow.png" alt="" /></div>
+        <div class="click-arrow show-welcome">
+          <img src="img/click-arrow.png" alt="" />
+        </div>
         <div class="add-note-btn"><i class="fa-solid fa-plus"></i></div>
       </div>
     </div>
