@@ -203,7 +203,15 @@ html,body{
   padding: 2rem;
   height: 60%;
 }
-.save-btn{
+.main-btn{
+  display: flex;
+  align-self: center;
+  justify-content: end;
+  width: 100%;
+  padding: 0 2rem;
+}
+.save-btn,
+.delete-btn{
   background-color: var(--ast-white);
   display: flex;
   align-items: center;
@@ -216,6 +224,15 @@ html,body{
   border-radius: 1rem;
   margin-left: 1rem;
   margin-top: 1rem;
+  cursor: pointer;
+}
+.save-btn:hover{
+  background: var(--greenbackround);
+  color: #fff;
+}
+.delete-btn:hover{
+  background: var(--redbackground);
+  color: #fff;
 }
 /* addbtn */
 .welcome-container{
