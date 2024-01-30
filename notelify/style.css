@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;900&family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+:root{
+  --black:#192a56;
+  --light-color:#666;
+  --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+  --ast-white: #f9fcfb;
+  --primary: #bb86fc;
+  --primary-variant: #3700b3;
+  --secondary: #03dac6;
+  --background: #1c1c1c;
+  --background1: #121212;
+  --lightbackground: #585757;
+  --pinkbackground: #ee645b;
+  --bluebackground: #168fff;
+  --greenbackround: #17cb49;
+  --yellowbackground: #ff9f2d;
+  --redbackground: #f74141;
+  --blackbackground:#000;
+  --whitebackground: #fff;
+  --main: #0085ff;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  color: var(--ast-white);
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20vw 1fr;
+  background-color: var(--background);
+}
+/* sidebar */
+.sidebar{
+  width: 100%;
+  height: 100%;
+  background-color: var(--background1);
+}
+.col-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--light-color);
+  height: 4rem;
+  padding: 0 1rem;
+}
+.head-btn-container{
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.head-btn{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+  cursor: pointer;
+}
+.col-head h2{
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--ast-white);
+  margin-right: 1rem;
+}
+.head-btn i{
+  font-size: 0.8rem;
+}
+.col-search{
+  overflow: hidden;
+  margin-bottom: 1rem;
+  height: 0;
+}
+.show-search{
+  height: 6rem;
+}
+.search-input{
+  background-color: var(--background);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 3rem;
+  border-radius: 4rem;
+}
+.Search-box{
+  color: #fff;
+  font-size: 1rem;
+  padding: .8rem 0;
+  padding-left: 1rem;
+  background: transparent;
+
+}
+.Search-box-btn{
+  background: transparent;
+  color: var(--light-color);
+  font-size: 1rem;
+  padding: 1rem 1.7rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+/* notes container */
+.notes-preview{
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+.note-container{
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  /* color: black; */
+  border-radius: 1rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+.pink{
+  background-color: var(--pinkbackground);
+}
+.blue{
+  background-color: var(--bluebackground);
+}
+/* main */
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-container{
+  background-color: var(--background1);
+  padding: 3rem 5rem;
+  border-radius: 2rem;
+}
+.mention{
+  width: 100%;
+  display: flex;
+  margin-top: 3rem;
+  flex-direction: column;
+  align-items: center;
+}
+/* addbtn */
+.click-arrow{
+  position: absolute;
+  height: 10rem;
+  bottom: 8.5rem;
+  right: 0;
+  overflow: hidden;
+}
+.click-arrow img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+  rotate: 270deg;
+}
+.add-note-btn{
+  position: absolute;
+  bottom: 4.5rem;
+  right: 4.5rem;
+  background-color: var(--background1);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+}
+.creat-note{
+  position: absolute;
+  bottom: 5rem;
+  right: 9.5rem;
+  color: #fff;
+  font-size: 2rem;
+}
+.creat-note img{
+  width: 7rem;
+  height: 7rem;
+  object-fit: contain;
+}
