@@ -24,7 +24,7 @@ deleteNoteBtn.addEventListener("click", deleteNote);
 // functions
 function showNotes() {
   if(NotesAPI.getAllNotes().length === 0){
-    changeMain("add");
+    changeMain("remove");
   }
   const notes = NotesAPI.getAllNotes();
   notesList.innerHTML = "";
@@ -46,6 +46,7 @@ function showNotes() {
 }
 
 function saveNote() {
+  changeMain("remove");
   const note = {
     title: notesTitleInput.value,
     body: notesBodyInput.value,

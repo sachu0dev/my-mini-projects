@@ -7,6 +7,13 @@ const projects = [
     img: "img-6",
   },
   {
+    name: "Notelify - a Notes app",
+    info: "Create and manage your notes seamlessly with Notelify, a feature-rich note-taking application. Add, edit, and organize your notes effortlessly. Standout features include the ability to edit notes, sorting them by last update for easy access to recent changes. Enhance your note-taking experience with a visually pleasing interface that incorporates colorful bubble tags for effective categorization. Elevate your organization and productivity with Notelify's intuitive design and powerful functionalities",
+    liveLink: "../notelify/index.html",
+    demoLink: "https://github.com/sachu0dev/15-mini-JavaScript-projects/tree/main/notelify",
+    img: "img-7",
+  },
+  {
     name: " DIY Black-Themed Simple Calculator",
     info: "Kickstart your coding journey with this DIY Black-Themed Calculator project. Using HTML, CSS, and JavaScript, create a sleek and stylish calculator from scratch. Dive into the world of web development and experience the elegance of simplicity in design and functionality. Add, subtract, multiply, and divide with flair while reducing eye strain with the chic black theme. Ready to code in style? Start building your Black-Themed Calculator now!",
     liveLink: "../calculator/index.html",

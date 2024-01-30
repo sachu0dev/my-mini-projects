@@ -134,10 +134,14 @@ html,body{
 .notes-preview{
   padding: 1.5rem;
   margin-top: 2rem;
+  overflow-y: scroll;
+  scrollbar-width: thin; 
+  scrollbar-color: transparent transparent;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
 }
 .note-container{
   padding: 1rem 2rem;
-  /* color: black; */
   border-radius: 1rem;
   margin-bottom: 1.5rem;
 }
@@ -152,6 +156,11 @@ html,body{
 .note-small-title{
   font-size: 1.3rem;
   margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .note-small-updated{
   font-size: 1rem;
