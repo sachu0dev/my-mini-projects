@@ -23,7 +23,9 @@ saveNoteBtn.addEventListener("click", saveNote);
 deleteNoteBtn.addEventListener("click", deleteNote);
 // functions
 function showNotes() {
-    changeMain("remove");
+  if(NotesAPI.getAllNotes().length === 0){
+    changeMain("add");
+  }
   const notes = NotesAPI.getAllNotes();
   notesList.innerHTML = "";
   notes.forEach(element => {
@@ -92,12 +94,10 @@ function createNewNote(){
 
     saveNote();
   }
-  if(NotesAPI.getAllNotes().length === 0){
     createNote.classList.remove("show-welcome");
     welcome.classList.remove("show-welcome");
     clickArow.classList.remove("show-welcome");
     inputContainer.classList.add("show-welcome");
-  }
 }
 
 function changeMain(options) {
