@@ -17,6 +17,12 @@ let isInedit = {
   editId: null,
 }
 // event listeners
+window.addEventListener('keydown', (e) => {
+  if (e.ctrlKey && e.key === 's') {
+    e.preventDefault();
+    saveNoteBtn();
+  }
+});
 window.addEventListener("DOMContentLoaded", showNotes);
 addNote.addEventListener("click", createNewNote);
 saveNoteBtn.addEventListener("click", saveNote);

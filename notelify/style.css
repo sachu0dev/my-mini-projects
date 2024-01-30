@@ -132,6 +132,7 @@ html,body{
 }
 /* notes container */
 .notes-preview{
+  height: 90vh;
   padding: 1.5rem;
   margin-top: 2rem;
   overflow-y: scroll;
