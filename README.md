@@ -2,6 +2,8 @@
 
 Welcome to my mini projects showcase! This repository is a collection of small projects that I've worked on to demonstrate my skills and interests.
 
+## Live Demo : [MiniProjects Live Demo](https://sushil-miniprojects.netlify.app/ "Visit Pcparts")
+
 ## About
 
 This repository serves as a portfolio to showcase various mini projects. Each project highlights different aspects of my skills and interests.
